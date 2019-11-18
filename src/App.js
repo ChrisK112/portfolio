@@ -1,4 +1,6 @@
 import React from 'react';
+import { BrowserRouter as HashRouter, Switch, Route } from 'react-router-dom';
+
 import './style.css';
 import Header from "./components/Header";
 import FooterDiv from "./components/Footer";
@@ -17,7 +19,6 @@ import About from "./components/About";
 import projectData from "./data/projectData";
 
 
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 
 function App() {
@@ -37,7 +38,7 @@ function App() {
 
 
   return (
-    <Router>
+    <HashRouter basename="/">
       <div className="App">
         <SideBar />
         <div className = {"container"}>
@@ -59,7 +60,7 @@ function App() {
         
         
       </div>
-    </Router>
+    </HashRouter>
   );
 
 }
