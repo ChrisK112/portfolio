@@ -38,7 +38,7 @@ function App() {
 
 
   return (
-    <HashRouter basename="/">
+    <HashRouter basename="/portfolio">
       <div className="App">
         <SideBar />
         <div className = {"container"}>
