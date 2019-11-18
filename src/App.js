@@ -44,14 +44,14 @@ function App() {
         <div className = {"container"}>
         
           <Switch>
-            <Route path = "/"  exact render = {() => (<div><Header /><ProjectSpace>{projectComponents}</ProjectSpace></div>)}/>
-            <Route path = "/dumesq" component = {Doomesq} />
-            <Route path = "/weatherapp" component = {WeatherApp} />
-            <Route path = "/triedata" component = {TrieData} />
-            <Route path = "/maps" component = {MapCreation} />
-            <Route path = "/fyproject" component = {FYProject} />
-            <Route path = "/contact" component = {Contact} /> 
-            <Route path = "/about" component = {About} /> 
+            <Route path = "process.env.PUBLIC_URL"  exact render = {() => (<div><Header /><ProjectSpace>{projectComponents}</ProjectSpace></div>)}/>
+            <Route path = "process.env.PUBLIC_URL/dumesq" component = {Doomesq} />
+            <Route path = "process.env.PUBLIC_URL/weatherapp" component = {WeatherApp} />
+            <Route path = "process.env.PUBLIC_URL/triedata" component = {TrieData} />
+            <Route path = "process.env.PUBLIC_URL/maps" component = {MapCreation} />
+            <Route path = "process.env.PUBLIC_URL/fyproject" component = {FYProject} />
+            <Route path = "process.env.PUBLIC_URL/contact" component = {Contact} /> 
+            <Route path = "process.env.PUBLIC_URL/about" component = {About} /> 
           </Switch> 
           <FooterDiv />
 
