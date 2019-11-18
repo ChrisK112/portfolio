@@ -38,7 +38,7 @@ function App() {
 
 
   return (
-    <HashRouter basename="/portfolio">
+    <HashRouter basename={process.env.PUBLIC_URL}>
       <div className="App">
         <SideBar />
         <div className = {"container"}>
