@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router , Switch, Route } from 'react-router-dom';
+import { HashRouter as Router , Switch, Route } from 'react-router-dom';
 
 import './style.css';
 import Header from "./components/Header";
@@ -38,13 +38,13 @@ function App() {
 
 
   return (
-    <Router  basename="/portfolio">
+    <Router basename="/#/">
       <div className="App">
         <SideBar />
         <div className = {"container"}>
         
           <Switch>
-            <Route path = "/"  exact render = {() => (<div><Header /><ProjectSpace>{projectComponents}</ProjectSpace></div>)}/>
+            <Route path = "/" exact render = {() => (<div><Header /><ProjectSpace>{projectComponents}</ProjectSpace></div>)}/>
             <Route path = "/dumesq" component = {Doomesq} />
             <Route path = "/weatherapp" component = {WeatherApp} />
             <Route path = "/triedata" component = {TrieData} />
