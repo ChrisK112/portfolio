@@ -25,7 +25,7 @@ const projectData =  [
 
     {
         name: "Map Creation",
-        imgURL: "./images/mapcreation.png",
+        imgURL: "./images/mapcreation.PNG",
         description: "A third person shooter in 2D artstyle and randomly generated levels.",
         skills: "C#, Unity, Blender",
         projectURL: "#/maps"
