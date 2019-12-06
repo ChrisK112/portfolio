@@ -35,7 +35,7 @@
 
     {
         "name": "Source Map Creation",
-        "imgURL": "./images/mapcreation.png",
+        "imgURL": "./images/mapmod.png",
         "description": "A third person shooter in 2D artstyle and randomly generated levels.",
         "skills": "C#, Unity, Blender",
         "projectURL": "#/maps"
