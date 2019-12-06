@@ -44,8 +44,6 @@ class App extends React.Component {
     return projectComponents
   }
   
-  
-  
   render(){
     const projectComponents = this.loadDataMainPage()
       return (
@@ -62,10 +60,14 @@ class App extends React.Component {
                       {projectComponents}
                     </ProjectSpace>
                   </div>)}/>
-                <Route path = "/dumesq" component = {Doomesq} />
+                <Route path = "/dumesq" component = 
+
+                {Doomesq} 
+                
+                />
                 <Route path = "/weatherapp" component = {WeatherApp} />
                 <Route path = "/triedata" component = {TrieData} />
-                <Route path = "/maps" component = {MapCreation} />
+                <Route path = "/maps" exact render = {MapCreation} />
                 <Route path = "/fyproject" component = {FYProject} />
                 <Route path = "/contact" component = {Contact} /> 
                 <Route path = "/about" component = {About} /> 

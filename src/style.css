@@ -42,6 +42,7 @@
 
   }
 
+  /*sidebar*/
 
   .sideBar {
     position:fixed;
@@ -170,6 +171,8 @@
   }
 
 
+  /*holds projects, siderbar and footer*/
+
   .projectSpace {
     position:sticky;
     top:15%;
@@ -178,6 +181,8 @@
     flex-wrap: wrap;
     align-items: center; 
   }
+
+   /*footer*/
 
   footer {
     margin-left: 1.5%;
@@ -195,7 +200,6 @@
     flex:20%;
 
   }
-
 
   .footerLeft {
     float: left;
@@ -220,6 +224,8 @@
   .footerIcon{
     max-width: 36px;
   }
+
+  /*main page project display*/
 
   .projectTile{
     border-radius: 25px;
@@ -281,6 +287,33 @@
     min-height: 3.5em;
   }
 
+
+  /* individual project pages*/
+
+  .projectPageImageContainer{
+    text-align: center;
+    flex: content;
+    max-width: 100%;
+    max-height: 50%;
+    display: inline-block;
+    background-color: whitesmoke;
+  }
+
+  .projectPageImage{
+    padding: 1em;
+    max-width: 29%;
+    display: inline-block;
+  }
+
+  .projectPageDescription{
+    padding-top:2em;
+  }
+
+  .projectPageSkills{
+
+  }
+
+  
 
 
 /* For mobile phones: */

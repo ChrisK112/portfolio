@@ -2,7 +2,7 @@
     {
         "name" : "WeatherApp",
         "imgURL": "./images/weatherApp.jpg",
-        "description" : "A weather application that is customisable",
+        "description" : "A customisable weather application for smartphones.",
         "skills": "Preact, JavaScipt, CSS",
         "projectURL": "#/weatherapp"
     },
@@ -10,23 +10,23 @@
     {
         "name": "Trie Data Structure",
         "imgURL": "./images/triedata.png",
-        "description": "A third person shooter in 2D artstyle and randomly generated levels.",
-        "skills": "C#, Unity, Blender",
+        "description": "A data structure designed to allow operations on millions of stored words in extremly small times.",
+        "skills": "Java",
         "projectURL": "#/triedata"
     },
 
     {
         "name": "Final Year Project",
         "imgURL": "./images/fyproject.jpg",
-        "description": "A third person shooter in 2D artstyle and randomly generated levels.",
-        "skills": "C#, Unity, Blender",
+        "description": "A research study into how colours affect a players perception of characters in video games.",
+        "skills": "C#, Unity, Java",
         "projectURL": "#/fyproject"
     },
 
     {
         "name": "Dumesq",
         "imgURL": "./images/dumesq.png",
-        "description": "A third person shooter in 2D artstyle and randomly generated levels.",
+        "description": "A third person shooter with a 2D artstyle and randomly generated levels.",
         "skills": "C#, Unity, Blender",
         "projectURL": "#/dumesq"
     },
@@ -36,19 +36,10 @@
     {
         "name": "Source Map Creation",
         "imgURL": "./images/mapmod.png",
-        "description": "A third person shooter in 2D artstyle and randomly generated levels.",
-        "skills": "C#, Unity, Blender",
+        "description": "Created and modified community maps and modes for source games",
+        "skills": "Valve Hammer Editor",
         "projectURL": "#/maps"
-    },
-    
-    
-
-    {
-        "name": "Trie Data Structure",
-        "imgURL": "./images/triangle-mosaic.png",
-        "description": "A third person shooter in 2D artstyle and randomly generated levels.",
-        "skills": "C#, Unity, Blender",
-        "projectURL": "#/triedata"
     }
+
 
 ]
