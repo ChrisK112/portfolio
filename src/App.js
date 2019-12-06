@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import { HashRouter as Router , Switch, Route } from 'react-router-dom';
 
 import './style.css';
@@ -16,54 +16,72 @@ import WeatherApp from "./components/WeatherApp";
 import About from "./components/About";
 
 //data - will change to jQuery later
-import projectData from "./data/projectData";
+import projectData from "./data/projectData.json";
 
 
 
 
-function App() {
 
-  const projectComponents = projectData.map(project => {
-    return (
-      <ProjectTile 
-      projectPage ={project.projectURL}
-      imgURL={project.imgURL} 
-      name={project.name} 
-      skills={project.skills} 
-      description={project.description}/>
-    )
-  })
+class App extends React.Component {
+
+  constructor() {
+    super()
+    this.state = {}
+  }
+
+  // get data from database to load into webpage
+  loadDataMainPage(){
+    const projectComponents = projectData.map(project => {
+      return (
+        <ProjectTile 
+        projectPage ={project.projectURL}
+        imgURL={project.imgURL} 
+        name={project.name} 
+        skills={project.skills} 
+        description={project.description}/>
+      )
+    })
+    return projectComponents
+  }
   
   
+  
+  render(){
+    const projectComponents = this.loadDataMainPage()
+      return (
+        <Router basename="/#/">
+          <div className="App">
+            <SideBar />
+            <div className = {"container"}>
 
+              <Switch>
+                <Route path = "/" exact render = {
+                  () => (
+                  <div> <Header />
+                    <ProjectSpace>
+                      {projectComponents}
+                    </ProjectSpace>
+                  </div>)}/>
+                <Route path = "/dumesq" component = {Doomesq} />
+                <Route path = "/weatherapp" component = {WeatherApp} />
+                <Route path = "/triedata" component = {TrieData} />
+                <Route path = "/maps" component = {MapCreation} />
+                <Route path = "/fyproject" component = {FYProject} />
+                <Route path = "/contact" component = {Contact} /> 
+                <Route path = "/about" component = {About} /> 
+              </Switch> 
 
-  return (
-    <Router basename="/#/">
-      <div className="App">
-        <SideBar />
-        <div className = {"container"}>
-        
-          <Switch>
-            <Route path = "/" exact render = {() => (<div><Header /><ProjectSpace>{projectComponents}</ProjectSpace></div>)}/>
-            <Route path = "/dumesq" component = {Doomesq} />
-            <Route path = "/weatherapp" component = {WeatherApp} />
-            <Route path = "/triedata" component = {TrieData} />
-            <Route path = "/maps" component = {MapCreation} />
-            <Route path = "/fyproject" component = {FYProject} />
-            <Route path = "/contact" component = {Contact} /> 
-            <Route path = "/about" component = {About} /> 
-          </Switch> 
-          <FooterDiv />
+              <FooterDiv />
 
-        </div>
-        
-        
-        
-      </div>
-    </Router >
-  );
+            </div>    
+            
+          </div>
+        </Router >
+      );
 
-}
+    }
+  }
+  
 
 
 

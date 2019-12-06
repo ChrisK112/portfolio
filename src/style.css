@@ -180,11 +180,45 @@
   }
 
   footer {
-    width:100%;
+    margin-left: 1.5%;
+    color: white;
+    width:98.5%;
     position:absolute;
     height: 5em;
     bottom:0;
-    background: gainsboro;
+    background:darkgrey;
+    box-shadow: 10px 10px 5px gainsboro;
+    box-sizing: border-box;
+    padding:1em;
+    padding-top: 0.5em;
+    text-decoration: none;
+    flex:20%;
+
+  }
+
+
+  .footerLeft {
+    float: left;
+    text-align:bottom;
+
+  }
+
+  .footerRight{
+    float: right;
+    padding-top: 0em;
+    text-align: right;
+  }
+
+  .footerLinks{
+    display:inline-block;
+  }
+
+  .footerLinkImage{
+    margin-left:1em;
+  }
+
+  .footerIcon{
+    max-width: 36px;
   }
 
   .projectTile{
