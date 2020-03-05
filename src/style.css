@@ -290,19 +290,28 @@
 
   /* individual project pages*/
 
+  .projectPageSpace{
+    
+  }
+
   .projectPageImageContainer{
     text-align: center;
     flex: content;
-    max-width: 100%;
+    width: 100%;
     max-height: 50%;
     display: inline-block;
     background-color: whitesmoke;
+    text-align: -webkit-center;
   }
 
   .projectPageImage{
-    padding: 1em;
-    max-width: 29%;
+    height: 20em;
+    width: 30%;
     display: inline-block;
+    margin: 1em;
+    object-fit: contain;
+    flex:30%;
+    min-width: 300px;
   }
 
   .projectPageDescription{
@@ -319,6 +328,7 @@
 /* For mobile phones: */
 @media only screen and (max-width: 768px) and (min-width : 360px)
 {
+
 
   body{
     max-width : 768px;
