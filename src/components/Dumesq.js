@@ -14,7 +14,7 @@ function Doomesq(){
                 <img className = "projectPageImage" src="./images/dumesqImages/design1.png" alt = "payload map"></img>
             </a>
             <a href = "./images/dumesqImages/design2.png">
-                <img className = "projectPageImage" src="./images/dumesqImages/design2.png" alt = "payload map"></img>
+                <img className = "projectPageImage" src="./images/dumesqImages/design2.png" alt = "dumesq"></img>
             </a>
             <a href = "./images/dumesqImages/design3.png">
                 <img className = "projectPageImage" src="./images/dumesqImages/design3.png" alt = "prophunt map"></img>
