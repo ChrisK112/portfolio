@@ -4,7 +4,7 @@
 
   body{
     background-color: rgb(83, 103, 110);
-    background-image: url(".\data\images\herringbone.png");
+    background-image: url("./data/images/herringbone.png");  
     min-width: 768px;
     font-family: 'Lato', sans-serif;
     margin-bottom:0;

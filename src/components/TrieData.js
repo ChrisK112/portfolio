@@ -10,8 +10,8 @@ function TrieData(){
 
 
             <div className = "projectPageImageContainer">
-                <a href = "./images/triedataImages/trieTests.png">
-                    <img className = "projectPageImage" src="./images/triedataImages/trieTests.png" alt = "payload map"></img>
+                <a href = "./images/triedataImages/trieTests.PNG">
+                    <img className = "projectPageImage" src="./images/triedataImages/trieTests.PNG" alt = "payload map"></img>
                 </a>
                 <a href = "./images/triedataImages/triedata.png">
                     <img className = "projectPageImage" src="./images/triedataImages/triedata.png" alt = "payload map"></img>

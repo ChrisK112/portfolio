@@ -9,14 +9,14 @@ function FYProject(){
 
 
             <div className = "projectPageImageContainer">
-                <a href = "./images/fyprojectImages/poster.png">
-                    <img className = "projectPageImage" src="./images/fyprojectImages/poster.png" alt = "payload map"></img>
+                <a href = "./images/fyprojectImages/poster.PNG">
+                    <img className = "projectPageImage" src="./images/fyprojectImages/poster.PNG" alt = "payload map"></img>
                 </a>
-                <a href = "./images/fyprojectImages/sampleresults.png">
-                    <img className = "projectPageImage" src="./images/fyprojectImages/sampleresults.png" alt = "payload map"></img>
+                <a href = "./images/fyprojectImages/sampleresults.PNG">
+                    <img className = "projectPageImage" src="./images/fyprojectImages/sampleresults.PNG" alt = "payload map"></img>
                 </a>
-                <a href = "./images/fyprojectImages/unityeditor.png">
-                    <img className = "projectPageImage" src="./images/fyprojectImages/unityeditor.png" alt = "prophunt map"></img>
+                <a href = "./images/fyprojectImages/unityeditor.PNG">
+                    <img className = "projectPageImage" src="./images/fyprojectImages/unityeditor.PNG" alt = "prophunt map"></img>
                 </a>
             </div>
 

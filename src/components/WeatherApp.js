@@ -13,8 +13,8 @@ function WeatherApp(){
                 <a href = "./images/weatherappImages/case1.jpg">
                     <img className = "projectPageImage" src="./images/weatherappImages/case1.jpg" alt = "payload map"></img>
                 </a>
-                <a href = "./images/weatherappImages/design.png">
-                    <img className = "projectPageImage" src="./images/weatherappImages/design.png" alt = "payload map"></img>
+                <a href = "./images/weatherappImages/design.PNG">
+                    <img className = "projectPageImage" src=".\images\weatherappImages\design.PNG" alt = "payload map"></img>
                 </a>
                 <a href = "./images/weatherappImages/case2.jpg">
                     <img className = "projectPageImage" src="./images/weatherappImages/case2.jpg" alt = "prophunt map"></img>
