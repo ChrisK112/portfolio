@@ -2,7 +2,7 @@ import React from "react";
 
 //project data for displaying project on sidebar dropdown
 
-import projectData from "../data/projectDataBackup";
+import projectData from "../data/projectData";
 import ProjectSpace from "./ProjectSpace";
 
 function SideBar(){
