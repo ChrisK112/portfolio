@@ -1,5 +1,6 @@
 import React from "react";
-
+//data for each project page
+import projectPageData from "../data/projectPageData.json";
 
 
 function TrieData(){
@@ -10,28 +11,52 @@ function TrieData(){
 
 
             <div className = "projectPageImageContainer">
-                <a href = "./images/triedataImages/trieTests.PNG">
-                    <img className = "projectPageImage" src="./images/triedataImages/trieTests.PNG" alt = "payload map"></img>
+                <a href = {process.env.PUBLIC_URL + "/images/triedataImages/trieTests.PNG"}>
+                    <img className = "projectPageImage" src={process.env.PUBLIC_URL + "/images/triedataImages/trieTests.PNG"} alt = "payload map"></img>
                 </a>
-                <a href = "./images/triedataImages/triedata.png">
-                    <img className = "projectPageImage" src="./images/triedataImages/triedata.png" alt = "payload map"></img>
+                <a href = {process.env.PUBLIC_URL + "/images/triedataImages/triedata.png"}>
+                    <img className = "projectPageImage" src={process.env.PUBLIC_URL + "/images/triedataImages/triedata.png"} alt = "payload map"></img>
                 </a>
             </div>
 
-            <p className = "projectPageDescription">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-            <p2 className = "projectPageSkills">Technologies:
-                <ul>
-                    <li>Blender</li>
-                    <li>Hammer Source Tool</li>
-                    <li>Sound editing Software</li>
-                    <li>Image editing Software </li>
-                </ul>
-            
-            </p2>
+            <p className = "projectPageDescription">
+            <hr></hr>
+            {
+            projectPageData.TrieData.map(project => {
+                return(
+                    project.description
+                 );
+                
+            })
+            }
+            <hr></hr>
+            </p>
 
-            </div>
+
+            <p className = "projectPageSkills">Technologies: <br></br>
+            {
+                projectPageData.TrieData.map(skill => {
+                    return(
+                        <ul>
+                            {
+                                skill.skills.map((skillDetail) => {
+                                return (
+                                    <li>
+                                        {skillDetail.name}
+                                    </li>
+                                );
+                                })
+                            }
+                        </ul>
+                    );
+                
+                })
+            }
+            </p>
         </div>
+    </div>
     )
+    
 }
 
 export default TrieData;

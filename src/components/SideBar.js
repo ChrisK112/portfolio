@@ -22,14 +22,14 @@ function SideBar(){
     return(
 
         <nav className = "sideBar">
-            <a href="#/about"><img className = "sideBarImage" src="./images/face.jpg"/></a>
+            <a href="#/about"><img className = "sideBarImage" src={process.env.PUBLIC_URL + "/images/face.jpg"}/></a>
             
                 <div className = "sideBarItems">
 
                     <div className = "sideBarItem">
                         <a href="#/" className = "sideBarLink"> 
                             <div className = "sideBarImageContainer">
-                                <img className = "sideBarIcon" src = "./icons/home.png" />
+                                <img className = "sideBarIcon" src = {process.env.PUBLIC_URL + "/icons/home.png"} />
                             </div>
 
                             <div className = "sideBarText">
@@ -40,9 +40,9 @@ function SideBar(){
                     </div>
 
                     <div className = "sideBarPopup">
-                        <a className = "sideBarLink"> 
+                        <a href="#/" className = "sideBarLink"> 
                             <div className = "sideBarImageContainer">
-                                <img className = "sideBarIcon" src = "./icons/projects.png" />
+                                <img className = "sideBarIcon" src = {process.env.PUBLIC_URL + "/icons/projects.png"} />
                             </div>
 
                             <div className = "sideBarText">
@@ -58,7 +58,7 @@ function SideBar(){
                     <div className = "sideBarItem">
                         <a href="#/about" className = "sideBarLink"> 
                             <div className = "sideBarImageContainer">
-                                <img className = "sideBarIcon" src = "./icons/cv.png" />
+                                <img className = "sideBarIcon" src = {process.env.PUBLIC_URL + "/icons/cv.png"} />
                             </div>
 
                             <div className = "sideBarText">
@@ -71,7 +71,7 @@ function SideBar(){
                     <div className = "sideBarItem">
                         <a href="#/contact" className = "sideBarLink"> 
                             <div className = "sideBarImageContainer">
-                                <img className = "sideBarIcon" src = "./icons/contact.png" />
+                                <img className = "sideBarIcon" src = {process.env.PUBLIC_URL + "/icons/contact.png"} />
                             </div>
 
                             <div className = "sideBarText">

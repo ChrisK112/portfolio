@@ -19,15 +19,15 @@ function Footer(){
                     
 
                     <a href="https://github.com/ChrisK112" className = "footerLinkImage"> 
-                        <img className = "footerIcon" src = "./icons/ghFooter.png" />
+                        <img className = "footerIcon" src = {process.env.PUBLIC_URL + "/icons/ghFooter.png"} />
                     </a>
                     
                     <a href="https://www.linkedin.com/in/krzysztof-kolodynski-6aba8318a/" className = "footerLinkImage"> 
-                        <img className = "footerIcon" src = "./icons/liFooter.png" />
+                        <img className = "footerIcon" src = {process.env.PUBLIC_URL + "/icons/liFooter.png"} />
                     </a>
                     
                     <a href="https://www.facebook.com/red.box.5" className = "footerLinkImage"> 
-                        <img className = "footerIcon" src = "./icons/fbFooter.png" />
+                        <img className = "footerIcon" src = {process.env.PUBLIC_URL + "/icons/fbFooter.png"} />
                     </a>
 
                 </div>

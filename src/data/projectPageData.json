@@ -1,45 +1,134 @@
+{
+"Dumesq": 
 [
-    {
-        "name" : "WeatherApp",
-        "imgURL": "./images/weatherApp.jpg",
-        "description" : "A customisable weather application for smartphones.",
-        "skills": "Preact, JavaScipt, CSS",
-        "projectURL": "#/weatherapp"
-    },
 
     {
-        "name": "Trie Data Structure",
-        "imgURL": "./images/triedata.png",
-        "description": "A data structure designed to allow operations on millions of stored words in extremly small times.",
-        "skills": "Java",
-        "projectURL": "#/triedata"
-    },
-
-    {
-        "name": "Final Year Project",
-        "imgURL": "./images/fyproject.jpg",
-        "description": "A research study into how colours affect a players perception of characters in video games.",
-        "skills": "C#, Unity, Java",
-        "projectURL": "#/fyproject"
-    },
-
-    {
-        "name": "Dumesq",
-        "imgURL": "./images/dumesq.png",
-        "description": "A third person shooter with a 2D artstyle and randomly generated levels.",
-        "skills": "C#, Unity, Blender",
-        "projectURL": "#/dumesq"
-    },
-
-    
-
-    {
-        "name": "Source Map Creation",
-        "imgURL": "./images/mapmod.png",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "skills": "Valve Hammer Editor",
-        "projectURL": "#/maps"
+        "description": 
+        "A third person shooter with a 2D art style and randomly generated levels. Made in Unity, with certain assets made in Blender, as part of a third year module. The project was an exciting undertaking, which helped broaden expertise in C# and an gave exposure to new programs. The game was a quarter year undertaking in which all aspects of game development had to be carried out. This included looking for, creating and editing assets: animations, models, textures, sounds and music, etc. while also working with the Unity game engine.\n\n The final game was a run and gun third person shooter, where the player is dropped into a randomnly generated dungeon, filled with monsters, pickups, and a final boss. Short footage showing a part of the game:\n\n",
+        "skills": [
+            {
+                "name": "C#" 
+            },
+            {
+                "name": "Unity Game Engine" 
+            },     
+            {
+                "name": "Various Sound and Image Editing Tools" 
+            },                  
+            {
+                "name": "Blender" 
+            }
+        ]
     }
 
+],
+
+"WeatherApp": 
+[
+
+    {
+        "description" : "A  customisable weather application developed as the final project for the Graphical User Interfaces module in unviersity. A group project that focused on the use of Preact - a lightweight version of React -  to create a weather reporting application with customisable features for iPhones. The app used an API to gather weather datafor the user’s area using geolocation, then processed all relevant information to display onits main page. The application was customisable, from its text to background, and evenchanged theme based on current weather.This project was a great opportunity to expand current knowledge of CSS, and was a goodintroduction to working with Preact, which is very nearly identical to React. The project was a learning experience and an introduction to Git and its helpful features, it also helped to improve skills relating to working in a team, especially organisation and communication.",
+        "skills": [
+            {
+                "name": "JavaScript" 
+            },
+            {
+                "name": "CSS" 
+            },     
+            {
+                "name": "jQuery" 
+            },                  
+            {
+                "name": "Preact" 
+            }
+        ]
+    }
+
+],
+
+"TrieData": 
+[
+
+    {
+        "description": "As part of a module project during the second year of the source, a task of finding the best method of storing a dictoniary of words and retriving the words stored within, was given. From research I decided upon a Trie Data Structure. The Trie Data Structure contained millions of words and carried out adding, checking, and removing operations on words in miliscule amount of time. Written in Java.",
+        "skills": [
+            {
+             "name": "Java" 
+            }
+            
+        ]
+    }
+
+],
+
+"FYProject": 
+[
+
+    {
+        "description": "A research study that was undertook as the final year project in University. The project involved developing an Android application in the Unity game engine using C#, and usingsaid application to conduct an experiment on thirty participants, and finally collect results. The results were subsequently processed into a desirable form using algorithms written in Java. Collected participant data had to be handled in accordance to data protection laws.Working on the project was an enjoyable experience, which provided a great opportunity to learn to use a game engine, experience working in a new programming language, and develop expertise in an already known one. Furthermore, the involvement of test participants in the project game me a good understanding of data privacy and data protection. The whole project also provided a chance to follow a long term software development life cycle, from requirements to implementation and testing.",
+        "skills": [
+            {
+                "name": "C#" 
+            },
+            {
+                "name": "Unity Game Engine" 
+            },     
+            {
+                "name": "Java" 
+            },                  
+            {
+                "name": "Various Image Editing Tools" 
+            }
+        ]
+    }
+
+],
+
+"MapCreation": 
+[
+
+    {
+        "description": "Having been part of a small albeit active game community, I have endouvered to develop a few fun modification and maps to the game, as well as a couple plugins that help the quality of life for servers.\n These include:",
+        "skills": [
+            {
+                "name": "Hammer Source Map Editor" 
+            },
+            {
+                "name": "SourceMod's Sourcepawn Language" 
+            },                      
+            {
+                "name": "Various Sound and Image Editing Tools" 
+            }
+        ],
+        "mods": [
+            {
+                "name": "Zombie Infection Mode Plugin",
+                "description": "Insipired by zombie infection modes in other games, this plugin sought to ease the administration of the mode by automating all needed functions."
+            },
+            {
+                "name": "Prop Hunt Mode and Map",
+                "description": "A modified map that allows for the prop hunt mode to be played on a specific map. One team of players get turned into props found around the map, while the other looks for them and hunts them down."
+            },    
+            {
+                "name": "Payload Mode and Map",
+                "description": "A modified map that mimicks the payload mode from other games. One team has to carry a cart to the other side of map, while another tries to prevent them from moving forward. "
+            },                   
+            {
+                "name": "Image Sprays Plugin",
+                "description": "Since newer Source games have sprays disabled for security reasons, this plugin was made to allow players to use a few select sprays on servers."
+            },
+            {
+                "name": "Random Music Clip Player",
+                "description": "A simple plugin that plays a set of randomly selected music clips to a player who joins the server"
+            }, 
+            {
+                "name": "Minimap Plugin",
+                "description": "A WIP plugin that displays the position of teammates on a self-made minimap"
+            }
+        ]
+
+    }
 
 ]
+
+}

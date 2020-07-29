@@ -7,7 +7,7 @@ import FooterDiv from "./components/Footer";
 import SideBar from "./components/SideBar";
 import ProjectTile from "./components/ProjectTile";
 import ProjectSpace from "./components/ProjectSpace";
-import Doomesq from "./components/Dumesq";
+import Dumesq from "./components/Dumesq";
 import TrieData from "./components/TrieData";
 import MapCreation from "./components/MapCreation";
 import FYProject from "./components/FYProject";
@@ -60,9 +60,11 @@ class App extends React.Component {
                       {projectComponents}
                     </ProjectSpace>
                   </div>)}/>
-                <Route path = "/dumesq" component = 
+                <Route path = "/dumesq"   component = 
 
-                {Doomesq} 
+                    {Dumesq}
+
+
                 
                 />
                 <Route path = "/weatherapp" component = {WeatherApp} />

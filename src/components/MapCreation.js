@@ -1,5 +1,6 @@
 import React from "react";
-
+//data for each project page
+import projectPageData from "../data/projectPageData.json";
 
 
 function MapCreation(){
@@ -10,31 +11,79 @@ function MapCreation(){
 
 
             <div className = "projectPageImageContainer">
-                <a href = "./images/mapcreationImages/payload1.png">
-                    <img className = "projectPageImage" src="./images/mapcreationImages/payload1.png" alt = "payload map"></img>
+                <a href = {process.env.PUBLIC_URL + "/images/mapcreationImages/payload1.png"}>
+                    <img className = "projectPageImage" src={process.env.PUBLIC_URL + "/images/mapcreationImages/payload1.png"} alt = "payload map"></img>
                 </a>
-                <a href = "./images/mapcreationImages/payload2.png">
-                    <img className = "projectPageImage" src="./images/mapcreationImages/payload2.png" alt = "payload map"></img>
+                <a href = {process.env.PUBLIC_URL + "/images/mapcreationImages/payload2.png"}>
+                    <img className = "projectPageImage" src={process.env.PUBLIC_URL + "/images/mapcreationImages/payload2.png"} alt = "payload map"></img>
                 </a>
-                <a href = "./images/mapcreationImages/prophunt.png">
-                    <img className = "projectPageImage" src="./images/mapcreationImages/prophunt.png" alt = "prophunt map"></img>
+                <a href = {process.env.PUBLIC_URL + "/images/mapcreationImages/prophunt.png"}>
+                    <img className = "projectPageImage" src={process.env.PUBLIC_URL + "/images/mapcreationImages/prophunt.png"} alt = "prophunt map"></img>
                 </a>
             </div>
 
-            <p className = "projectPageDescription">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-            <p2 className = "projectPageSkills">Technologies:
-                <ul>
-                    <li>Blender</li>
-                    <li>Hammer Source Tool</li>
-                    <li>Sound editing Software</li>
-                    <li>Image editing Software </li>
-                </ul>
+            <p className = "projectPageDescription">
+            <hr></hr>
+            {
+            projectPageData.MapCreation.map(project => {
+                return(
+                    project.description
+                 );
+                
+            })
+            }
             
-            </p2>
 
-            </div>
+            {
+                projectPageData.MapCreation.map(skill => {
+                    return(
+                        <ul>
+                            {
+                                skill.mods.map((modsDetail) => {
+                                return (
+                                    <div>
+                                    <li>
+                                        {modsDetail.name}
+                                    </li>
+                                    {modsDetail.description}
+                                    <br></br><br></br>
+                                    </div>
+                                );
+                                })
+                            }
+                        </ul>
+                    );
+                
+                })
+            }
+
+        <hr></hr>
+            </p>          
+
+            <p className = "projectPageSkills">Technologies: <br></br>
+            {
+                projectPageData.MapCreation.map(skill => {
+                    return(
+                        <ul>
+                            {
+                                skill.skills.map((skillDetail) => {
+                                return (
+                                    <li>
+                                        {skillDetail.name}
+                                    </li>
+                                );
+                                })
+                            }
+                        </ul>
+                    );
+                
+                })
+            }
+        </p>
         </div>
+    </div>
     )
+    
 }
 
 export default MapCreation;

@@ -1,5 +1,6 @@
 import React from "react";
-
+//data for each project page
+import projectPageData from "../data/projectPageData.json";
 
 function FYProject(){
     return(
@@ -9,31 +10,55 @@ function FYProject(){
 
 
             <div className = "projectPageImageContainer">
-                <a href = "./images/fyprojectImages/poster.PNG">
-                    <img className = "projectPageImage" src="./images/fyprojectImages/poster.PNG" alt = "payload map"></img>
+                <a href = {process.env.PUBLIC_URL + "/images/fyprojectImages/poster.png"}>
+                    <img className = "projectPageImage" src={process.env.PUBLIC_URL + "/images/fyprojectImages/poster.PNG"} alt = "payload map"></img>
                 </a>
-                <a href = "./images/fyprojectImages/sampleresults.PNG">
-                    <img className = "projectPageImage" src="./images/fyprojectImages/sampleresults.PNG" alt = "payload map"></img>
+                <a href = {process.env.PUBLIC_URL + "/images/fyprojectImages/sampleresults.png"}>
+                    <img className = "projectPageImage" src={process.env.PUBLIC_URL + "/images/fyprojectImages/sampleresults.PNG"} alt = "payload map"></img>
                 </a>
-                <a href = "./images/fyprojectImages/unityeditor.PNG">
-                    <img className = "projectPageImage" src="./images/fyprojectImages/unityeditor.PNG" alt = "prophunt map"></img>
+                <a href = {process.env.PUBLIC_URL + "/images/fyprojectImages/unityeditor.PNG"}>
+                    <img className = "projectPageImage" src={process.env.PUBLIC_URL + "/images/fyprojectImages/unityeditor.PNG"} alt = "prophunt map"></img>
                 </a>
             </div>
 
-            <p className = "projectPageDescription">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-            <p2 className = "projectPageSkills">Technologies:
-                <ul>
-                    <li>Blender</li>
-                    <li>Hammer Source Tool</li>
-                    <li>Sound editing Software</li>
-                    <li>Image editing Software </li>
-                </ul>
-            
-            </p2>
+            <p className = "projectPageDescription">
+            <hr></hr>
+            {
+            projectPageData.FYProject.map(project => {
+                return(
+                    project.description
+                 );
+                
+            })
+            }
+            <hr></hr>
+            </p>
 
-            </div>
+
+            <p className = "projectPageSkills">Technologies: <br></br>
+            {
+                projectPageData.FYProject.map(skill => {
+                    return(
+                        <ul>
+                            {
+                                skill.skills.map((skillDetail) => {
+                                return (
+                                    <li>
+                                        {skillDetail.name}
+                                    </li>
+                                );
+                                })
+                            }
+                        </ul>
+                    );
+                
+                })
+            }
+            </p>
         </div>
+    </div>
     )
+    
 }
 
 export default FYProject;

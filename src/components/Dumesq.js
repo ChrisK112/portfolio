@@ -1,8 +1,8 @@
 import React from "react";
+//data for each project page
+import projectPageData from "../data/projectPageData.json";
 
-
-
-function Doomesq(){
+function Dumesq(){
     return(
         <div className = "headerOne">
         <h1>Dumesq</h1>
@@ -10,36 +10,61 @@ function Doomesq(){
 
 
         <div className = "projectPageImageContainer">
-            <a href = "./images/dumesqImages/design1.PNG">
-                <img className = "projectPageImage" src="./images/dumesqImages/design1.PNG" alt = "dumesq"></img>
+            <a href = {process.env.PUBLIC_URL + "/images/dumesqImages/design1.PNG"}>
+                <img className = "projectPageImage" src={process.env.PUBLIC_URL + "/images/dumesqImages/design1.PNG"} alt = "dumesq"></img>
             </a>
-            <a href = "./images/dumesqImages/design2.PNG">
-                <img className = "projectPageImage" src="./images/dumesqImages/design2.PNG" alt = "dumesq"></img>
+            <a href = {process.env.PUBLIC_URL + "/images/dumesqImages/design2.PNG"}>
+                <img className = "projectPageImage" src={process.env.PUBLIC_URL + "/images/dumesqImages/design2.PNG"} alt = "dumesq"></img>
             </a>
-            <a href = "./images/dumesqImages/design3.PNG">
-                <img className = "projectPageImage" src="./images/dumesqImages/design3.PNG" alt = "prophunt map"></img>
+            <a href = {process.env.PUBLIC_URL + "/images/dumesqImages/design3.PNG"}>
+                <img className = "projectPageImage" src={process.env.PUBLIC_URL + "/images/dumesqImages/design3.PNG"} alt = "prophunt map"></img>
             </a>
         </div>
 
-        <p className = "projectPageDescription">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-        <p className = "projectPageSkills">Technologies:</p> <br></br>
-        <ul>
-                <li>Blender</li>
-                <li>Hammer Source Tool</li>
-                <li>Sound editing Software</li>
-                <li>Image editing Software </li>
-            </ul>
 
+        <p className = "projectPageDescription">
+        <hr></hr>
+            {
+            projectPageData.Dumesq.map(project => {
+                return(
+                    project.description
+                 );
+                
+            })
+            }
+
+        <a href="https://www.youtube.com/watch?v=EiOzHfedvgY">https://www.youtube.com/watch?v=EiOzHfedvgY</a>
+        <hr></hr>
+        </p>
+
+
+        <p className = "projectPageSkills">Technologies: <br></br>
+            {
+            projectPageData.Dumesq.map(skill => {
+                return(
+                    <ul>
+                          {
+                            skill.skills.map((skillDetail) => {
+                              return (
+                                  <li>
+                                    {skillDetail.name}
+                                  </li>
+                              );
+                            })
+                          }
+                    </ul>
+                 );
+                
+            })
+            }
+                </p>
         </div>
     </div>
     )
     
 }
 
-export default Doomesq;
 
 
-
-
-
+export default Dumesq;
 

@@ -1,7 +1,7 @@
 [
     {
         "name" : "WeatherApp",
-        "imgURL": "./images/weatherApp.jpg",
+        "imgURL": "/images/weatherApp.jpg",
         "description" : "A customisable weather application for smartphones.",
         "skills": "Preact, JavaScipt, CSS",
         "projectURL": "#/weatherapp"
@@ -9,7 +9,7 @@
 
     {
         "name": "Trie Data Structure",
-        "imgURL": "./images/triedata.png",
+        "imgURL": "/images/triedata.png",
         "description": "A data structure designed to allow operations on millions of stored words in extremly small times.",
         "skills": "Java",
         "projectURL": "#/triedata"
@@ -17,7 +17,7 @@
 
     {
         "name": "Final Year Project",
-        "imgURL": "./images/fyproject.jpg",
+        "imgURL": "/images/fyproject.jpg",
         "description": "A research study into how colours affect a players perception of characters in video games.",
         "skills": "C#, Unity, Java",
         "projectURL": "#/fyproject"
@@ -25,7 +25,7 @@
 
     {
         "name": "Dumesq",
-        "imgURL": "./images/dumesq.png",
+        "imgURL": "/images/dumesq.png",
         "description": "A third person shooter with a 2D artstyle and randomly generated levels.",
         "skills": "C#, Unity, Blender",
         "projectURL": "#/dumesq"
@@ -34,10 +34,10 @@
     
 
     {
-        "name": "Source Map Creation",
-        "imgURL": "./images/mapmod.png",
-        "description": "Created and modified community maps and modes for source games",
-        "skills": "Valve Hammer Editor",
+        "name": "Various Game Modifications",
+        "imgURL": "/images/mapmod.png",
+        "description": "Devloped game modifications and community maps and modes for source games",
+        "skills": "Valve Hammer Editor, SourcePawn",
         "projectURL": "#/maps"
     }
 
