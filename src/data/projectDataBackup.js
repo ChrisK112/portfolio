@@ -37,26 +37,7 @@ const projectData =  [
         description: "A third person shooter in 2D artstyle and randomly generated levels.",
         skills: "C#, Unity, Blender",
         projectURL: "#/triedata"
-    },
-
-    {
-        name: "Trie Data Structure",
-        imgURL: "./images/triangle-mosaic.png",
-        description: "A third person shooter in 2D artstyle and randomly generated levels.",
-        skills: "C#, Unity, Blender",
-        projectURL: "#/triedata"
-    },
-
-    {
-        name: "Trie Data Structure",
-        imgURL: "./images/triangle-mosaic.png",
-        description: "A third person shooter in 2D artstyle and randomly generated levels.",
-        skills: "C#, Unity, Blender",
-        projectURL: "#/triedata"
-    },
-
-
-
+    }
 
 
 ]

@@ -8,9 +8,9 @@ function About(){
             <div className = "about">
                 <p>
                     <br></br>
-                    Hi, my name is Krzysztof! I am a graudate of Computer Science, and hope to soon join the industry profesionally.
+                    Hi, my name is Krzysztof! I am a graduate  of Computer Science, and hope to soon join the industry profesionally.
                     <br></br><br></br>
-                    With experience I have gained from numerous projects in and outsidehis studies, and passion to learn new and 
+                    With experience I have gained from numerous projects in and outside my studies, and passion to learn new and 
                     engaging technologies, I hope to become an asset to any team I joins. My time at university introduced me to many 
                     programming languages, but my most developed one would have to be Java, although I work with many, for many
                     different projects. Having always had an interest in the technology and software development industry, I was keen 
