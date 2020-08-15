@@ -355,6 +355,15 @@
     align-items: center;
     padding-top: 10%;
   }
+  
+  footer{
+    display:flex;
+    height: 7em;
+  }
+
+  .footerLinks{
+    display:flex;
+  }
 
   .about 
   {
@@ -377,6 +386,7 @@
     .projectSpace{
       width: 90%;
       margin:auto;
+      padding-bottom: 7em;
     }
 
     .projectTile{
@@ -424,6 +434,15 @@
       display:block;
       width: 100%;
   
+    }
+
+    #projectLink{
+      pointer-events: none; 
+      cursor: default; 
+    }
+
+    .sideBarPopupContent{
+      pointer-events: auto;
     }
 
     .sideBarImageContainer{

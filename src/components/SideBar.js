@@ -40,7 +40,7 @@ function SideBar(){
                     </div>
 
                     <div className = "sideBarPopup">
-                        <a href="#/" className = "sideBarLink"> 
+                        <a href="#/"  id = "projectLink" className = "sideBarLink"> 
                             <div className = "sideBarImageContainer">
                                 <img className = "sideBarIcon" src = {process.env.PUBLIC_URL + "/icons/projects.png"} />
                             </div>
